@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.navbar {
+  border: 2px solid black;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-item {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #ffcc00;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.nav-item:hover {
+  color: #ffcc00;
+}
+
+/* Styling for the logo */
+.nav-logo h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for icons */
+.nav-icons {
+  display: flex;
+  gap: 15px; /* Space between icons */
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  filter: invert(100%);
+  transition: transform 0.2s ease-in-out, filter 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.3);
+  filter: invert(70%) sepia(60%) saturate(200%) hue-rotate(190deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-bottom: 10px;
+  }
+
+  .nav-logo {
+    margin-bottom: 10px;
+  }
+}
+
+.order-cart {
+  display: flex;
+  gap: 25px;
+}
+.order-cart img {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  filter: invert(100%);
+  transition: transform 0.3s ease-in-out, filter 0.3s;
+}
+
+.order-cart img:hover {
+  transform: scale(1.3);
+  filter: invert(70%) sepia(50%) saturate(200%) hue-rotate(220deg);
+}
+.logout {
+  display: flex;
+  gap: 20px;
+}
+
+.logout img {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  filter: invert(100%);
+  transition: transform 0.3s ease-in-out, filter 0.3s;
+}
+
+.logout img:hover {
+  transform: scale(1.3);
+  filter: invert(70%) sepia(60%) saturate(200%) hue-rotate(150deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+
+  .nav-logo {
+    margin-bottom: 10px;
+  }
+}

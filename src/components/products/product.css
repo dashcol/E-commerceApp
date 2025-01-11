@@ -1,0 +1,273 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../../../public/BUYit.jpg") no-repeat center center fixed; /* Background image */
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #ffffff; /* Ensure text is visible on dark background */
+}
+
+/* Main container */
+.main {
+  display: flex;
+  padding: 20px;
+  gap: 10px; /* Increased gap for better spacing between sidebar and cards */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  width: 90%;
+}
+/* Sidebar */
+.sideBar {
+  width: 350px; /* Increased width */
+  height: 500px; /* Increased height for proportional scaling */
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px; /* Increased padding for better spacing inside */
+  border-radius: 8px;
+  color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Cards container */
+.CardsContainer {
+  margin-top: 40px;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Adjust spacing between cards */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Individual card */
+.Cards {
+  height: 300px; /* Ensure all cards are the same height */
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.Cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* Card image */
+.CardsImg {
+  height: 140px; /* Adjusted to allow space for other elements */
+  width: 140px; /* Maintain aspect ratio */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+}
+
+.Img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Card name */
+.CardsName {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+  max-height: 40px; /* Limit the height */
+  overflow: hidden; /* Hide content that overflows */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  white-space: nowrap; /* Prevent wrapping to a new line */
+  width: 100%; /* Ensure it fits within the card */
+  box-sizing: border-box; /* Include padding/border in width calculation */
+}
+
+/* Card price */
+.CardsPrice {
+  font-size: 1rem;
+  text-align: center;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Search box */
+.searchBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 350px;
+  position: absolute;
+  right: 90px;
+  top: 90px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.searchBox input {
+  flex-grow: 1;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  padding: 0 15px;
+  font-size: 0.9rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.searchBox input:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.searchBox input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+/* Search image (icon) */
+.searchImg {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.8));
+  transition: transform 0.2s ease;
+}
+
+.searchImg:hover {
+  transform: scale(1.2);
+}
+
+/* Slider */
+.slider {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.slider input[type="range"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.slider input[type="range"]:hover::-webkit-slider-thumb {
+  transform: scale(1.1);
+}
+
+.slider input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #007bff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.slider input[type="range"]:hover::-moz-range-thumb {
+  transform: scale(1.1);
+}
+
+.price-display {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.CardsButton {
+  background-color: #ff6b6b; /* Base background color */
+  color: white; /* Text color */
+  font-size: 14px; /* Slightly smaller font size */
+  padding: 8px 16px; /* Padding for the button */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: all 0.3s ease; /* Smooth transition for effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.CardsButton:hover {
+  background-color: #ff4c4c; /* Change background color on hover */
+  transform: translateY(-3px); /* Slightly lift the button */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.CardsButton:active {
+  transform: translateY(1px); /* Push down slightly on click */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
+}
+
+.priceFilter,
+.categoryFilter {
+  margin-bottom: 20px;
+}
+
+.price-display {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.categoryList {
+  list-style: none;
+  padding: 0;
+}
+
+.categoryList li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.categoryList input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.categoryList label {
+  cursor: pointer;
+}
+.sideBar h1 {
+  margin-left: 50px;
+  margin-right: 50px;
+}

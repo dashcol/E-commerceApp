@@ -1,0 +1,76 @@
+/* CSS File (Order.css) */
+
+/* Container styles */
+.order-container {
+  font-family: "Arial", sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 2px solid #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+/* Title styles */
+.order-title {
+  font-size: 1.8rem;
+  color: #4caf50;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Message styles */
+.order-message {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* List styles */
+.order-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-item {
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects */
+.order-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Text and price alignment */
+.order-item span {
+  font-weight: bold;
+}
+
+/* Mobile-friendly */
+@media (max-width: 600px) {
+  .order-container {
+    padding: 1rem;
+  }
+  .order-title {
+    font-size: 1.5rem;
+  }
+  .order-message {
+    font-size: 1rem;
+  }
+  .order-item {
+    font-size: 0.9rem;
+  }
+}
