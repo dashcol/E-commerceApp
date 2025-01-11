@@ -1,0 +1,64 @@
+/* Container styling */
+.forgot-container {
+    background: rgba(0, 0, 0, 0.3); /* Dark background */
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    margin: 100px auto; /* Centering the div */
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2); /* Light shadow for contrast */
+  }
+  
+  /* Title styling */
+  .forgot-title {
+    text-align: center;
+    color: #f0f0f0; /* Light text color */
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling */
+  .forgot-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input styling */
+  .forgot-input {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #f0f0f0; /* Light text color for input */
+    margin-bottom: 15px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Light shadow */
+    background: rgba(17, 17, 17, 0.8); /* Dark opaque input background */
+  }
+  
+  .forgot-input::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Light placeholder text */
+  }
+  
+  .forgot-input:focus {
+    outline: none;
+    border: 1px solid #00bfff; /* Bright blue border for focus */
+    box-shadow: 0 0 8px rgba(0, 191, 255, 0.5); /* Glow effect */
+  }
+  
+  /* Button styling */
+  .forgot-button {
+    background: #00bfff; /* Bright blue button */
+    border: none;
+    border-radius: 10px;
+    color: black; /* Dark text on button for contrast */
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .forgot-button:hover {
+    background: #007bff; /* Slightly darker blue on hover */
+  }
+  

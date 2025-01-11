@@ -96,7 +96,6 @@ export default function AppContext({ children }) {
         password: userData.password,
       });
 
-      alert("Signup successful! Please log in.");
       return true;
     } catch (error) {
       console.error("Error during signup:", error);

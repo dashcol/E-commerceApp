@@ -1,0 +1,26 @@
+/* Error.css */
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffe6e6;
+  border: 1px solid #ff4d4d;
+  color: #d8000c;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.error-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}

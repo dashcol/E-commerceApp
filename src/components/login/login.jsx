@@ -38,7 +38,9 @@ export default function Login() {
         <button type="submit" className="login-button">
           Login
         </button>
-        <p>forgot password?</p>
+        <Link to="forgot-password" state={{ email }}>
+          <p>forgot password?</p>
+        </Link>
         <Link to="/signup">
           <h4>Signup</h4>
         </Link>

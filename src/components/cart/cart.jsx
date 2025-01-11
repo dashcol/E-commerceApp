@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import { useValue } from "../Context/Context";
+
 import "./cart.css";
 import { useState } from "react";
+import { useValue } from "../../Context/Context";
 
 export default function Cart() {
   const { allData, cartItems, handleRemoveFromCart } = useValue();

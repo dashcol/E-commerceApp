@@ -1,0 +1,25 @@
+/* Loading.css */
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../../../public/BUYit.jpg") no-repeat center center fixed; /* Background image */
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #ffffff; /* Ensure text is visible on dark background */
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.loading img {
+  max-width: 100px;
+  max-height: 100px;
+}
